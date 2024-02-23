@@ -40,9 +40,9 @@ O ambiente do servidor está rodando no Google Cloud Provider, orquestrando as t
 
 A cada execução de cada serviço, o servidor deve formatar e armazenar corretamente os logs dos serviços executados, para que em caso de falha, seja possível realizar uma análise detalhada, conforme campos abaixo.
 
-    - Tempo de resposta;
-    - Status da transação;
-    - TID da transação;
-    - Request e response;
-    - ClientId.
+- Tempo de resposta;
+- Status da transação;
+- TID da transação;
+- Request e response;
+- ClientId.
 Além disso, o serviço deve possuir o grafana para análise de gráficos e detecção de possíveis impactos no ambiente.
