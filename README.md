@@ -15,3 +15,8 @@ A raspberry possui um sistema operacional Linux, ambiente responsável por receb
 ### Inteligência artificial
 A inteligência artificial é responsável por analisar as imagens recebidas como parâmetro, com o objetivo de detectar possíveis frames onde exista principios de incêndios. Após a análise, um script deve formatar a imagem em <extensão do arquivo> e enviar ao servidor (descrição abaixo).
 Caso o retorno seja verdadeiro para incêndio, um script deve fazer um POST na API destinada, informando o incêndio, após realizar o POST, a ML deve continuar a validação para a próxima imagem. Em caso de não detecção, o sistema deve seguir a validação para a próxima imagem.
+### Servidor
+O ambiente do servidor está rodando no Google Cloud Provider, orquestrando as tecnologias implementadas a partir do kubernetes. O servidor possui o Kong como API gateway, responsável por receber as imagens.
+- Ação do Kong:
+      Envia os dados recebidos para o service NGINX. O NGINX envia os dados para o deployment, onde os dados serão direcionados.
+
