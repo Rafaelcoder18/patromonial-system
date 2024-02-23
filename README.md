@@ -1,4 +1,4 @@
-![image](https://github.com/Rafaelcoder18/patromonial-system/assets/89639044/a40101c5-0751-40ca-a26c-7abe64259d44)<p align="center">
+<p align="center">
     <img width="400" height="200" src=".github/logo.png" title="Logo do projeto"> <br />
     <img src="https://img.shields.io/maintenance/yes/2020?style=for-the-badge" title="Status do projeto">
     <img src="https://img.shields.io/github/workflow/status/ccuffs/guia-tcc/ci.uffs.cc?label=Build&logo=github&logoColor=white&style=for-the-badge" title="Status do build">
