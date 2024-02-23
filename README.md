@@ -18,5 +18,6 @@ Caso o retorno seja verdadeiro para incêndio, um script deve fazer um POST na A
 ### Servidor
 O ambiente do servidor está rodando no Google Cloud Provider, orquestrando as tecnologias implementadas a partir do kubernetes. O servidor possui o Kong como API gateway, responsável por receber as imagens.
 - Ação do Kong:
+  
       Envia os dados recebidos para o service NGINX. O NGINX envia os dados para o deployment, onde os dados serão direcionados.
 
