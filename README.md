@@ -47,3 +47,13 @@ A cada execução de cada serviço, o servidor deve formatar e armazenar correta
 - ClientId.
   
 Além disso, o serviço deve possuir o grafana para análise de gráficos e detecção de possíveis impactos no ambiente.
+#
+##Front-End
+#
+## Dashboard de visualização
+### Sistema de vídeomonitoramento
+O dashboard para o vídeomonitoramento é montado a partir de uma estrutura bootstrap, que contém contâiners de acordo com a quantidade de câmeras definidas pelo backend da aplicação. O funcionamento se dá a partir da seguinte forma:
+
+Ao acessar a URL de entrada do servidor, o usuário deve realizar o login. O login se dá a partir de um usuário e senha definidos na criação do cliente, assim que o mesmo é registrado no sistema. A partir do login, o dashboard com as imagens em tempo real já são exibidas, as câmeras são selecionadas a partir das credenciais, onde o ID da câmera recebe um campo do cliente.
+
+Além do campo com as imagens, o dashboard deve exibir o status do alarme de incêndio ao lado do contâiner da câmera em si, conforme anexo. A validação do status do alarme deve ser feito a cada determinado periodo de tempo, e atualizado de acordo com o status retornado.
