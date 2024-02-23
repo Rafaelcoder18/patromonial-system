@@ -17,7 +17,15 @@ A inteligência artificial é responsável por analisar as imagens recebidas com
 Caso o retorno seja verdadeiro para incêndio, um script deve fazer um POST na API destinada, informando o incêndio, após realizar o POST, a ML deve continuar a validação para a próxima imagem. Em caso de não detecção, o sistema deve seguir a validação para a próxima imagem.
 ### Servidor
 O ambiente do servidor está rodando no Google Cloud Provider, orquestrando as tecnologias implementadas a partir do kubernetes. O servidor possui o Kong como API gateway, responsável por receber as imagens.
-- Ação do Kong:
+- Kong:
   
-      Envia os dados recebidos para o service NGINX. O NGINX envia os dados para o deployment, onde os dados serão direcionados.
+      Envia os dados recebidos para o service NGINX.
+  
+- Service NGINX:
 
+      O Service NGINX é responsável por enviar os dados para o deployment definido na configuração, a partir de um parâmetro enviado do pelo Kong.
+
+- Deployment:
+    - Deployment de dados:
+    
+          O deployment é responsável por formatar os dados para o formato exigido pelo banco de dados e inseri-lo no banco de dados.
