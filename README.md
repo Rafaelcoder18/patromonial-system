@@ -29,3 +29,19 @@ O ambiente do servidor está rodando no Google Cloud Provider, orquestrando as t
     - Deployment de dados:
     
           O deployment é responsável por formatar os dados para o formato exigido pelo banco de dados e inseri-lo no banco de dados.
+    
+    - Deployment de alarme:
+ 
+          O deployment é responsável por atualizar o estado do alarme de incêndio no banco de dados.
+
+    - Deployment de disparo de mensagem:
+ 
+          O deployment é responsável por disparar uma mensagem via WhathsApp ou SMS, informando o Alarme.
+
+A cada execução de cada serviço, o servidor deve formatar e armazenar corretamente os logs dos serviços executados, para que em caso de falha, seja possível realizar uma análise detalhada, conforme campos abaixo.
+    - Tempo de resposta;
+    - Status da transação;
+    - TID da transação;
+    - Request e response;
+    - ClientId.
+Além disso, o serviço deve possuir o grafana para análise de gráficos e detecção de possíveis impactos no ambiente.
