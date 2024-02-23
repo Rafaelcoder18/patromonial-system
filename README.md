@@ -58,7 +58,7 @@ Ao acessar a URL de entrada do servidor, o usuário deve realizar o login. O log
 
 Além do campo com as imagens, o dashboard deve exibir o status do alarme de incêndio ao lado do contâiner da câmera em si, conforme anexo. A validação do status do alarme deve ser feito a cada determinado periodo de tempo, e atualizado de acordo com o status retornado.
 <p align='center'>
-    <img width="600" height="300" src='https://github.com/Rafaelcoder18/patromonial-system/assets/89639044/fb60f488-bea8-4f14-8699-08ad747d8a70' title="Logo do projeto"> 
+    <img width="600" height="300" src='https://github.com/Rafaelcoder18/patromonial-system/assets/89639044/fb60f488-bea8-4f14-8699-08ad747d8a70' title="Logo do projeto"> <br /><br />
     <img width="300" height="600" src='https://github.com/Rafaelcoder18/patromonial-system/assets/89639044/b002ec46-0b91-4f83-8e36-0db5ae7f5e16' title="Logo do projeto">
     <img scr=>
 </p>
