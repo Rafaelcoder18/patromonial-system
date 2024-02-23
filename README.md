@@ -45,4 +45,5 @@ A cada execução de cada serviço, o servidor deve formatar e armazenar correta
 - TID da transação;
 - Request e response;
 - ClientId.
+  
 Além disso, o serviço deve possuir o grafana para análise de gráficos e detecção de possíveis impactos no ambiente.
