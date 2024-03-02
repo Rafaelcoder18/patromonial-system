@@ -67,5 +67,6 @@ O fluxograma do projeto explica melhor como tudo é orgnizado, é só <a href="h
 ## Para começar
 
 Para começar, é necessário criar um cluster, seja em uma intância local ou em cloud, o importante é iniciar o cluster. Ao acessar o arquivo `patromonial-system/cloud_system/cluster/cluster_config.yaml`, você irá acessar o arquivo de configuração do cluster. Par executa-lo, é necessário o seguinte comando:
+
     kind create cluster --config cluster_config.yaml --name patrimonial-system-cluster
 Após a execução do mesmo, o cluster será criado e estará pronto para uso.
