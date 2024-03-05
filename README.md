@@ -66,7 +66,23 @@ O fluxograma do projeto explica melhor como tudo é orgnizado, é só <a href="h
 
 ## Para começar
 
+### Cluster
 Para começar, é necessário criar um cluster, seja em uma intância local ou em cloud, o importante é iniciar o cluster. Ao acessar o arquivo `patromonial-system/cloud_system/cluster/cluster_config.yaml`, você irá acessar o arquivo de configuração do cluster. Par executa-lo, é necessário o seguinte comando:
 
     kind create cluster --config cluster_config.yaml --name patrimonial-system-cluster
+
 Após a execução do mesmo, o cluster será criado e estará pronto para uso.
+
+Para o projeto é necessário a utilização de ingress, ou seja, é necessário um ingress controller. O ingress controler é responsável por gerenciar os nossos ingress. Iremos utilizar o Nginx Ingress Controler, pois é amplamente adotado e bem documentado. Para utiliza-lo, executaremos o comando abaixo, responsável por criar um deployment para o Ingress controler.
+
+      kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/kind/deploy.yaml
+
+Após a execução do comando, se executarmos o comando `kubectl get pods -A` iremos obter o retorno abaixo. Os pods devem estar exatamente conforme a imagem.
+
+![Estado dos pods do Nginx Controller](readme/image.png)
+
+Após a execvução dos passos acima, estamos prontos para iniciar a configuração do ambiente executado dentro do cluster.
+
+### Persistent Volumes necessários
+
+
