@@ -63,3 +63,10 @@ Além do campo com as imagens, o dashboard deve exibir o status do alarme de inc
     <img scr=>
 </p>
 O fluxograma do projeto explica melhor como tudo é orgnizado, é só <a href="https://lucid.app/lucidchart/2824418b-d959-4b2d-95af-7359e57d9a1c/edit?viewport_loc=531%2C-489%2C3700%2C1812%2C0_0&invitationId=inv_301b8d16-d85c-4215-a002-cb2809fac652"> clicar aqui!</a>
+
+## Para começar
+
+Para começar, é necessário criar um cluster, seja em uma intância local ou em cloud, o importante é iniciar o cluster. Ao acessar o arquivo `patromonial-system/cloud_system/cluster/cluster_config.yaml`, você irá acessar o arquivo de configuração do cluster. Par executa-lo, é necessário o seguinte comando:
+
+    kind create cluster --config cluster_config.yaml --name patrimonial-system-cluster
+Após a execução do mesmo, o cluster será criado e estará pronto para uso.
