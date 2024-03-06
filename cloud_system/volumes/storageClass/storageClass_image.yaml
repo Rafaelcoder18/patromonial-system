@@ -1,0 +1,10 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+provisioner: kubernetes.io/no-provisioner
+metadata:
+  name: storageclass-recordings
+  namespace: rec-img-prd
+  labels:
+    app: patrimonial-system
+    env: prd
+    type: recordings

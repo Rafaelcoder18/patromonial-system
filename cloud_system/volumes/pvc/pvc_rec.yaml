@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc-rec
+  namespace: rec-img-prd
+  labels:
+    app: patrimonial-system
+    env: prd
+    type: recordings
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 2Gi
+  storageClassName: storageclass-recordings
+  selector:
+    matchLabels:
+      storage: nfs
