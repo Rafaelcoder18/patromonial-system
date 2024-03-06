@@ -83,6 +83,15 @@ Após a execução do comando, se executarmos o comando `kubectl get pods -A` ir
 
 Após a execvução dos passos acima, estamos prontos para iniciar a configuração do ambiente executado dentro do cluster.
 
-### Persistent Volumes necessários
+### Namespaces
 
+Foi definido três namespaces para o ambiente do cluster.
+- fr-alarm-prd
+- pm-alarm-prd
+- rec-img-prd
 
+O `fr-alarm-prd` é a namespace onde todos os componentes relacionados a alarme de incêndio foram instalados, ou seja, qualquer componente que tenha relação com o alarme de incêncio, tem a namespace `fr-alarm-prd`
+
+O `pm-alarm-prd` é a namespace onde todos os componentes relacionados a alarme de perimetro foram instalados, ou seja, qualquer componente que tenha relação com alarmes de perímetro, possui a namespace `pm-alarm-prd`
+
+O `rec-img-prd` é a namespace onde todos componentes relacionados a gravação, reprodução e outras operações com imagens, ou seja, qualquer componente que tenha relação com imagens, possui a namespace `rec-img-prd`

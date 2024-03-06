@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: pm-alarm-prd
+  labels:
+    app: patrimonial-system
+    env: prd
+    type: perimetral-alarm
