@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 """
 Autor: Rafael Prado
 Data: 19/03/2024

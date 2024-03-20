@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 """
 Autor: Rafael Prado
 Data: 19/03/2024
@@ -9,6 +11,7 @@ import os # Biblioteca do sistema
 
 # Diretório onde os vídeos estão localizados
 diretorio = '/home/rafael/patromonial-system/raspberry_system/recordings/'
+
 
 # Loop infinito para verificar se existem dois arquivos de vídeo na pasta e realizar a concatenação
 while True:
