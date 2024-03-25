@@ -1,0 +1,12 @@
+names:
+- fire
+nc: 1
+roboflow:
+  license: CC BY 4.0
+  project: fire-1-yeank
+  url: https://universe.roboflow.com/teste-maiic/fire-1-yeank/dataset/1
+  version: 1
+  workspace: teste-maiic
+test: ../test/images
+train: train/images
+val: valid/images
