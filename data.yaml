@@ -8,5 +8,5 @@ roboflow:
   version: 1
   workspace: teste-maiic
 test: ../test/images
-train: train/images
-val: valid/images
+train: fire-1-1/train/images
+val: fire-1-1/valid/images
